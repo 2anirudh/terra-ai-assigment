@@ -1,0 +1,30 @@
+📁 Files Overview
+
+### `basic_npc_chat.py`
+The core functional system that:
+- Loads player data from `players.json`
+- Processes messages chronologically
+- Detects mood using keyword matching
+- Maintains 3-message history per player
+- Generates default template responses
+- Saves results to `npc_logs.json`
+
+
+### `npc_chat.py`
+Enhanced version featuring:
+- OpenAI GPT integration for dynamic responses
+- Context-aware reply generation
+- Same mood detection and history tracking
+- *(Note: Requires OpenAI API key - untested due to API limitations)*
+
+
+✅ Testing Status
+Locally Tested & Verified: Successfully processed all 100 JSON entries from players.json with full functionality confirmed.
+
+basic_npc_chat.py: ✅ Fully tested and working - processes all entries, detects moods, tracks history, generates logs
+npc_chat.py: ⚠️ Ready to run but requires paid OpenAI API key for testing
+
+To test yourself:
+
+Use basic_npc_chat.py for immediate testing (no API key needed)
+If you have a paid OpenAI API key, npc_chat.py will also run with enhanced AI responses
